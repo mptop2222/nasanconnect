@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南山校安中心</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft JhengHei', 'Segoe UI', sans-serif;
+        }
+        
+        body {
+            background-color: #f0f7ff;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            background-image: linear-gradient(135deg, #e6f2ff 0%, #f0f7ff 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 87, 146, 0.15);
+            padding: 40px;
+            border-top: 8px solid #005792;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e6f2ff;
+        }
+        
+        h1 {
+            color: #005792;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+            letter-spacing: 1px;
+        }
+        
+        .subtitle {
+            color: #4a90e2;
+            font-size: 1.2rem;
+            font-weight: normal;
+        }
+        
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        
+        .link-item {
+            display: flex;
+            align-items: center;
+            background-color: #f8fbff;
+            border-radius: 10px;
+            padding: 18px 25px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border-left: 5px solid #4a90e2;
+            box-shadow: 0 3px 10px rgba(0, 87, 146, 0.08);
+        }
+        
+        .link-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 87, 146, 0.15);
+            background-color: #edf5ff;
+            border-left-color: #005792;
+        }
+        
+        .link-number {
+            background-color: #4a90e2;
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+            font-size: 1.1rem;
+        }
+        
+        .link-content {
+            flex-grow: 1;
+        }
+        
+        .link-title {
+            font-weight: bold;
+            color: #005792;
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+        
+        .link-url {
+            color: #666;
+            font-size: 0.9rem;
+            word-break: break-all;
+        }
+        
+        .link-arrow {
+            color: #4a90e2;
+            font-size: 1.5rem;
+            margin-left: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .link-item:hover .link-arrow {
+            transform: translateX(5px);
+            color: #005792;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #7a9bc2;
+            font-size: 0.9rem;
+            padding-top: 20px;
+            border-top: 1px solid #e6f2ff;
+        }
+        
+        .note {
+            background-color: #f0f9ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            color: #005792;
+            font-size: 0.95rem;
+            border-left: 4px solid #4a90e2;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .link-item {
+                padding: 15px 20px;
+            }
+            
+            .link-title {
+                font-size: 1.2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .link-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .link-number {
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+            
+            .link-arrow {
+                align-self: flex-end;
+                margin-top: 10px;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>南山校安中心</h1>
+            <p class="subtitle">學生事務系統連結</p>
+        </header>
+        
+        <div class="note">
+            請點擊下方連結進入相應系統。所有連結將在新視窗中開啟。
+        </div>
+        
+        <div class="links-container">
+            <a href="https://mptop2222.github.io/nansan1234/" target="_blank" class="link-item">
+                <div class="link-number">一</div>
+                <div class="link-content">
+                    <div class="link-title">假生銷通報名系統</div>
+                    <div class="link-url">https://mptop2222.github.io/nansan1234/</div>
+                </div>
+                <div class="link-arrow">→</div>
+            </a>
+            
+            <a href="https://sr.nssh.ntpc.edu.tw/rps/pages/p01.aspx" target="_blank" class="link-item">
+                <div class="link-number">二</div>
+                <div class="link-content">
+                    <div class="link-title">高中獎懲</div>
+                    <div class="link-url">https://sr.nssh.ntpc.edu.tw/rps/pages/p01.aspx</div>
+                </div>
+                <div class="link-arrow">→</div>
+            </a>
+            
+            <a href="https://sr.nssh.ntpc.edu.tw/rps_jnr/" target="_blank" class="link-item">
+                <div class="link-number">三</div>
+                <div class="link-content">
+                    <div class="link-title">國中獎懲</div>
+                    <div class="link-url">https://sr.nssh.ntpc.edu.tw/rps_jnr/</div>
+                </div>
+                <div class="link-arrow">→</div>
+            </a>
+            
+            <a href="https://sr.nssh.ntpc.edu.tw/online/information.asp" target="_blank" class="link-item">
+                <div class="link-number">四</div>
+                <div class="link-content">
+                    <div class="link-title">高中查詢</div>
+                    <div class="link-url">https://sr.nssh.ntpc.edu.tw/online/information.asp</div>
+                </div>
+                <div class="link-arrow">→</div>
+            </a>
+            
+            <a href="https://sr.nssh.ntpc.edu.tw/online_jnr/" target="_blank" class="link-item">
+                <div class="link-number">五</div>
+                <div class="link-content">
+                    <div class="link-title">國中查詢</div>
+                    <div class="link-url">https://sr.nssh.ntpc.edu.tw/online_jnr/</div>
+                </div>
+                <div class="link-arrow">→</div>
+            </a>
+            
+            <a href="https://sr.nssh.ntpc.edu.tw/auth" target="_blank" class="link-item">
+                <div class="link-number">六</div>
+                <div class="link-content">
+                    <div class="link-title">高中請假</div>
+                    <div class="link-url">https://sr.nssh.ntpc.edu.tw/auth</div>
+                </div>
+                <div class="link-arrow">→</div>
+            </a>
+            
+            <a href="https://sr.nssh.ntpc.edu.tw/auth_jnr/Auth/Login?sys=Auth" target="_blank" class="link-item">
+                <div class="link-number">七</div>
+                <div class="link-content">
+                    <div class="link-title">國中請假</div>
+                    <div class="link-url">https://sr.nssh.ntpc.edu.tw/auth_jnr/Auth/Login?sys=Auth</div>
+                </div>
+                <div class="link-arrow">→</div>
+            </a>
+        </div>
+        
+        <footer>
+            <p>南山校安中心 &copy; 2026 | 最後更新: 2026年1月16日</p>
+            <p>如有任何問題，請聯繫校安中心管理員</p>
+        </footer>
+    </div>
+
+    <script>
+        // 添加點擊效果
+        document.querySelectorAll('.link-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // 添加短暫的反饋效果
+                this.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+            });
+        });
+        
+        // 控制台提示
+        console.log("南山校安中心連結頁面已載入");
+        console.log("包含7個系統連結，點擊任何連結將在新視窗開啟");
+    </script>
+</body>
+</html>
